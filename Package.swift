@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.9
 
 // MIT License
 //
@@ -24,7 +24,7 @@ import PackageDescription
 
 let package = Package(
     name: "MessageKit",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v13), .visionOS(.v1)],
     products: [
         .library(name: "MessageKit", targets: ["MessageKit"]),
         .plugin(name: "SwiftLintPlugin", targets: ["SwiftLintPlugin"]),
